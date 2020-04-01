@@ -1,0 +1,46 @@
+.top-info {
+  background-color: #2e3f5a;
+  color: #fff;
+  font-size: 13px;
+
+  @media (min-width: 992px) {
+    font-size: 16px;
+  }
+
+  svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    fill: #1aa2f8;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &__contacts {
+
+    .phones {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    @media (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__contacts-phones {
+    svg {
+      margin-top: 5px;
+    }
+  }
+}
