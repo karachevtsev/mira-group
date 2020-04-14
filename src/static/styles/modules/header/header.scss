@@ -1,4 +1,5 @@
 .header {
+  background: #fff;
 
   .navbar-nav {
     margin-top: 20px;
@@ -50,20 +51,22 @@
             width: 100%;
           }
         }
-      }
 
-      &.active {
+        &.active {
 
-        > .nav-link {
-          position: relative;
-          color: #1aa2f8;
+          
+            position: relative;
+            color: #1aa2f8;
 
-          &:after {
-            width: 100%;
-            display: block;
-          }
+            &:after {
+              width: 100%;
+              display: block;
+            }
+
         }
       }
+
+
     }
   }
 }

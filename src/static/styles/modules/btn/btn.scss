@@ -3,11 +3,18 @@
   font-weight: 700;
   font-size: 1.1rem;
   text-transform: uppercase;
-  color: #fff;
+  color: $theme-primary-blue;
+  border: 2px solid $theme-primary-blue;
   border-radius: 0;
 
+  &:hover {
+    color: #fff;
+    background: $theme-primary-blue;
+  }
+
   &--bordered {
-    border: 2px solid #fff;
+    color: #fff;
+    border-color: #fff;
 
     &:hover {
       color: #fff;
