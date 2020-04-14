@@ -1,0 +1,28 @@
+.slide-content {
+  text-align: center;
+  color: #fff;
+
+  &__title {
+    font-weight: 700;
+
+    @media (min-width: 992px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__subtitle {
+
+  }
+
+  &__text {
+    @media (min-width: 992px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__buttons {
+    .btn {
+      margin: 20px 10px;
+    }
+  }
+}

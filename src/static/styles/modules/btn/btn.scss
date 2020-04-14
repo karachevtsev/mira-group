@@ -1,0 +1,18 @@
+.btn {
+  min-width: 210px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0;
+
+  &--bordered {
+    border: 2px solid #fff;
+
+    &:hover {
+      color: #fff;
+      border-color: $theme-primary-blue;
+      background: $theme-primary-blue;
+    }
+  }
+}

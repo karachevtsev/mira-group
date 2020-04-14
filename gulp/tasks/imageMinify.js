@@ -13,7 +13,7 @@ module.exports = function imageMinify() {
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
       imagemin.mozjpeg({
-        quality: 75,
+        quality: 100,
         progressive: true
       }),
       imagemin.optipng({optimizationLevel: 5}),

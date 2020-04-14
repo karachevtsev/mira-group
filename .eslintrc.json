@@ -8,5 +8,8 @@
         "standard"
       ]
     }
-  ]
+  ],
+  "globals": {
+    "$": true
+  }
 }

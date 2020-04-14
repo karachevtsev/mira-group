@@ -1,0 +1,43 @@
+.promo {
+  background: $theme-primary-blue url(../images/content/bg-promo.png) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+
+  .container {
+    padding-top: 67px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      margin: 0;
+      text-align: right;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @media (min-width: 992px) {
+      text-align: left;
+      margin: 0;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+
+    @media (min-width: 992px) {
+      margin: 0;
+      text-align: right;
+    }
+  }
+}
