@@ -1,5 +1,5 @@
 .about {
-  background: white url(../images/content/bg-about.png) no-repeat center bottom;
+  background: #fff url(../images/content/bg-about.png) no-repeat center bottom;
   background-size: auto;
 
   .container {
@@ -19,7 +19,7 @@
     line-height: 66px;
     text-transform: uppercase;
     text-align: center;
-    color: #1a1e2a;
+    color: $title-color;
 
     &:before {
       content: "";
@@ -50,6 +50,6 @@
 
   &__text {
     text-align: center;
-    color: #959595;
+    color: $text-color-gray;
   }
 }

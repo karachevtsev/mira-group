@@ -3,10 +3,11 @@ section#services.services
         h2.services__title Наши услуги
         .services__list
             .services__list-item.services-item
-                a.services-item__header(data-toggle='collapse', href='#business', aria-expanded='false', aria-controls='business')
+                a.services-item__header.collapsed(data-toggle='collapse', href='#business', aria-expanded='false', aria-controls='business' data-number="01")
                     | Организация бизнеса и открытие фирм
+                    span.services-item__header-cross
                 #business.collapse
-                    .services-litem__body
+                    .services-item__body
                         p Организовывая бизнес в Польше следует учесть, что расходы не ограничатся открытием юридического лица. Основное финансовое бремя ляжет на Вас при его дальнейшем обслуживании (счета за аренду, услуги связи и прочие обязательные платежи). По этой причине открытие фирмы без ее коммерческой деятельности (например, как основание для иммиграции) нами не рекомендуется.
                         p Наше содействие по организации бизнеса включает в себя, но не ограничивается:
                         ul
@@ -21,20 +22,22 @@ section#services.services
                             li  При необходимости — регистрация компании в качестве плательщика VAT и VAT UE, в управлении социального обеспечения (ZUS), заключение договора аренды виртуального офиса и договора на бухгалтерское обслуживание Вашей фирмы
 
             .services__list-item.services-item
-                a.services-item__header(data-toggle='collapse', href='#accounting', aria-expanded='false', aria-controls='accounting')
+                a.services-item__header.collapsed(data-toggle='collapse', href='#accounting', aria-expanded='false', aria-controls='accounting' data-number="02")
                     | Бухгалтерское обслуживание
+                    span.services-item__header-cross
                 #accounting.collapse
-                    .services-litem__body
+                    .services-item__body
                         p Бухгалтерское обслуживание подразумевает тесный и постоянный контакт между предприятием и государственными фискальными органами и включает в себя:
                         ul
                             li Ведение бухгалтерского учета, налоговых книг доходов и расходов, составление и передача деклараций в налоговую инспекцию, ведение текущей документации, учет основных средств и нематериальных активов.
                             li Выполнение функции отделов кадров малых и средних предприятий, начисление заработной платы и ведение ведомостей сотрудников, составление и передача расчетов и деклараций в управление социального обеспечения и налоговую инспекцию.
 
             .services__list-item.services-item
-                a.services-item__header(data-toggle='collapse', href='#planning', aria-expanded='false', aria-controls='planning')
+                a.services-item__header.collapsed(data-toggle='collapse', href='#planning', aria-expanded='false', aria-controls='planning' data-number="03")
                     | Планирование бизнеса
+                    span.services-item__header-cross
                 #planning.collapse
-                    .services-litem__body
+                    .services-item__body
                         p Парадоксально, но многие предпочитают регистрировать фирму еще не определившись с тем, что в последствии должно обеспечить им доход. Такой подход неоправданно рискован и, зачастую, не правилен. Большое количество предпринимателей сталкиваются с проблемой того, что та или иная модель бизнеса, работающая в одной стране не приносит дохода в другой. Связано это со многими причинами - это и емкость рынка, и покупательная способность, традиционное и культурное различие потребления товаров и услуг.
                         ul
                             li Оценке соответствия продукта требованиям рынка
@@ -52,15 +55,16 @@ section#services.services
                             li Мониторинг цен на товары и услуги
 
             .services__list-item.services-item
-                a.services-item__header(data-toggle='collapse', href='#safety', aria-expanded='false', aria-controls='safety')
+                a.services-item__header.collapsed(data-toggle='collapse', href='#safety', aria-expanded='false', aria-controls='safety' data-number="04")
                     | Охрана труда
+                    span.services-item__header-cross
                 #safety.collapse
-                    .services-litem__body
+                    .services-item__body
                         p Охрана труда – неотъемлемая часть деятельности любой европейской фирмы не только на бумаге, но и в реальной жизни.
                         p Инвестиции в безопасность труда уменьшают потери от приостановки деятельности фирмы, риски ее закрытия и выплаты штрафов. Также улучшаются условия труда, повышая его эффективность.
                         p Хотелось бы обратить Ваше внимание на то, что Государственная система управления охраной труда ЕС выдвигает четкие требования к безопасности и возлагает ответственность на их невыполнение непосредственно на собственника.
                         p
-                            stong MIRA GROUP
+                            b MIRA GROUP
                             =" "
                             | выполняет работы по:
                         ul
