@@ -1,1 +1,15 @@
-footer { flex: 0 0 auto; }
+.footer {
+  flex: 0 0 auto;
+  background-color: #2e3f59;
+  color: #fff;
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__copyright {
+    margin: 0;
+    text-align: center;
+  }
+}

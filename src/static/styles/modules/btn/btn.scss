@@ -14,7 +14,23 @@
     background: $theme-primary-blue;
   }
 
-  &--bordered {
+  .spinner-border {
+    position: absolute;
+    top: 50%;
+    margin-top: -1rem;
+    left: 2rem;
+    display: none;
+    font-size: 0.6rem;
+  }
+
+  &.is-loading {
+
+    .spinner-border {
+      display: inline-block;
+    }
+  }
+
+  &--default {
     color: #fff;
     border-color: #fff;
 
@@ -22,6 +38,17 @@
       color: #fff;
       border-color: $theme-primary-blue;
       background: $theme-primary-blue;
+    }
+  }
+
+  &--primary {
+    color: #fff;
+    border-color: #fff;
+
+    &:hover {
+      color: $theme-primary-blue;
+      border-color: #fff;;
+      background: #fff;
     }
   }
 }

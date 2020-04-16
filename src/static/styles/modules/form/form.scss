@@ -3,6 +3,12 @@
   label {
     color: $text-color-gray;
     position: relative;
+
+    &.error {
+      margin-bottom: 0;
+      font-size: 0.8rem;
+      color: #ff0000;
+    }
   }
 
   input {
@@ -13,7 +19,11 @@
     padding: 0px 20px;
     color: #333;
     font-weight: 400;
-    border-radius: 0px;
+    border-radius: 0;
+
+    &.error {
+      border-color: #ff0000;
+    }
   }
 
   textarea {
@@ -21,9 +31,13 @@
     width: 100%;
     border: 1px solid #e6e2f5;
     padding: 15px 20px;
-    color: #333;
-    resize: none;
     font-weight: 400;
-    border-radius: 0px;
+    color: $title-color;
+    border-radius: 0;
+    resize: none;
+
+    &.error {
+      border-color: #ff0000;
+    }
   }
 }

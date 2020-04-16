@@ -1,0 +1,9 @@
+#modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog(role='document')
+        .modal-content
+            .modal-body
+                svg(role='img' width=40 height=40)
+                    use(xlink:href='./static/images/sprite/symbol/sprite.svg#send')
+                h4.modal-message.text-center Спасибо за Вашу заявку!
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×

@@ -39,13 +39,13 @@ section#contacts.contacts
                     .contacts-box__form
                         h3 Появились вопоосы? Напишиите нам!
                         p Мы обязательно Вам ответим
-                        form.form(method='post', action='')
+                        form#form.form(method='post', action='')
                             .row
                                 .col-lg-6.col-12
                                     .form-group
                                         label
                                             | Ваше имя
-                                        input(name='name', type='text', placeholder='')
+                                        input(name='name', type='text', placeholder='' required)
                                 .col-lg-6.col-12
                                     .form-group
                                         label
@@ -55,12 +55,15 @@ section#contacts.contacts
                                     .form-group
                                         label
                                             | Ваш номер телефона
-                                        input(name='phone', type='text', placeholder='')
+                                        input(name='phone', type='text', placeholder='' required)
                                 .col-12
                                     .form-group.message
                                         label
                                             | Сообщение
-                                        textarea(name='message', placeholder='')
+                                        textarea(name='message', placeholder='' required)
                                 .col-12
                                     .form-group.button
-                                        button.btn(type='submit') Отправить
+                                        button#submit.btn(type='submit')
+                                            span.spinner-border.spinner-border-sm(role='status', aria-hidden='true')
+                                            =" "
+                                            | Отправить

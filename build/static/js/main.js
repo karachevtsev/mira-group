@@ -20,4 +20,34 @@ $(document).ready(function () {
       section.css('padding-top', 0);
     }
   });
+  var form = $('#form');
+  var submitBtn = $('#submit');
+  var modal = $('#modal');
+  form.validate({
+    rules: {
+      phone: {
+        required: true,
+        digits: true
+      }
+    },
+    submitHandler: function submitHandler(form) {
+      submitBtn.prop('disabled', true).addClass('is-loading');
+      $.ajax({
+        type: 'POST',
+        url: 'email.php',
+        data: $(form).serialize(),
+        success: function success() {
+          modal.modal('show');
+          $(this).find('input').val('');
+          $(this).trigger('reset');
+          submitBtn.prop('disabled', false).removeClass('is-loading');
+        },
+        error: function error() {
+          modal.find('.modal-message').html('Ошибочка! Что-то пошло не так!');
+          modal.modal('show');
+          submitBtn.prop('disabled', false).removeClass('is-loading');
+        }
+      });
+    }
+  });
 });
