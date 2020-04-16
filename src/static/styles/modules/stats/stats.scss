@@ -1,0 +1,32 @@
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 10px;
+  text-align: center;
+  white-space: nowrap;
+  height: 150px;
+  border: 2px solid rgba(255,255,255,.2);
+
+  &__text {
+    h3 {
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: 700;
+
+      svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        fill: #fff;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      line-height: 20px;
+    }
+  }
+ }
