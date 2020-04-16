@@ -1,0 +1,66 @@
+section#contacts.contacts
+    .container
+        h2.contacts__title Связаться с нами
+        .contacts__box.contacts-box
+            .row
+                .col-lg-5.col-12
+                    .contacts-box__info.contacts-box__info--has-backround
+                        .contacts-box__info-item
+                            span.icon
+                                svg(role='img' width=20 height=20)
+                                    use(xlink:href='./static/images/sprite/symbol/sprite.svg#phone-alt-solid')
+                            h3 Позвоните нам сейчас:
+                            ul
+                                li
+                                    a(href="tel:+48736672086") +48-736-672-086
+                                li
+                                    a(href="tel:+380977544531") +38-097-754-45-31 (Viber, WhatsApp)
+                        .contacts-box__info-item
+                            span.icon
+                                svg(role='img' width=20 height=20)
+                                    use(xlink:href='./static/images/sprite/symbol/sprite.svg#envelope-solid')
+                            h3 Email:
+                            ul
+                                li
+                                    a.email(href="mailto:miragroupspzoo@gmail.com") miragroupspzoo@gmail.com
+                        .contacts-box__info-item
+                            span.icon
+                                svg(role='img' width=20 height=20)
+                                    use(xlink:href='./static/images/sprite/symbol/sprite.svg#map-marker-alt-solid')
+                            h3 Наш адрес:
+                            ul
+                                li
+                                    | MIRA GROUP SP. Z O.O.
+                                    br
+                                    | Plac Bankowy 2
+                                    br
+                                    | 00-095 Warszawa
+                .col-lg-7.col-12
+                    .contacts-box__form
+                        h3 Появились вопоосы? Напишиите нам!
+                        p Мы обязательно Вам ответим
+                        form.form(method='post', action='')
+                            .row
+                                .col-lg-6.col-12
+                                    .form-group
+                                        label
+                                            | Ваше имя
+                                        input(name='name', type='text', placeholder='')
+                                .col-lg-6.col-12
+                                    .form-group
+                                        label
+                                            | Ваш Email
+                                        input(name='email', type='email', placeholder='')
+                                .col-lg-12.col-12
+                                    .form-group
+                                        label
+                                            | Ваш номер телефона
+                                        input(name='phone', type='text', placeholder='')
+                                .col-12
+                                    .form-group.message
+                                        label
+                                            | Сообщение
+                                        textarea(name='message', placeholder='')
+                                .col-12
+                                    .form-group.button
+                                        button.btn(type='submit') Отправить

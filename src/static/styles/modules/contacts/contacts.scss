@@ -1,5 +1,6 @@
-.services {
-  background: #eff0ee  url(../images/content/bg-services.jpg) no-repeat top center fixed;
+.contacts {
+  background: #eff0ee  url(../images/content/bg-contacts.jpg) no-repeat top center fixed;
+  background-size: cover;
 
   .container {
     padding-top: 80px;
@@ -23,24 +24,11 @@
       width: 100%;
       display: block;
       height: 4px;
-      background: #d7d7d7;
+      background: $theme-primary-blue;
       margin: 0 auto;
       left: 0;
       right: 0;
       top: 100%;
     }
-  }
-
-  &__list {
-    margin-bottom: 40px;
-  }
-
-  &__list-item {
-    margin-bottom: 15px;
-  }
-
-  &__btn {
-    margin: 0;
-    text-align: center;
   }
 }

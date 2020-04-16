@@ -1,0 +1,29 @@
+.form {
+
+  label {
+    color: $text-color-gray;
+    position: relative;
+  }
+
+  input {
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    border: 1px solid #e6e2f5;
+    padding: 0px 20px;
+    color: #333;
+    font-weight: 400;
+    border-radius: 0px;
+  }
+
+  textarea {
+    height: 180px;
+    width: 100%;
+    border: 1px solid #e6e2f5;
+    padding: 15px 20px;
+    color: #333;
+    resize: none;
+    font-weight: 400;
+    border-radius: 0px;
+  }
+}

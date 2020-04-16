@@ -1,0 +1,105 @@
+.contacts-box {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+
+  &__info {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 25px;
+    background: url(../images/content/bg-contacts-box.jpg) no-repeat center center;
+    background-size: cover;
+
+    @media (min-width: 768px) {
+      padding: 50px;
+    }
+  }
+
+  &__info--has-backround {
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $theme-primary-blue;
+      opacity: 0.4;
+      z-index: -1;
+    }
+  }
+
+  &__info-item {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .icon {
+      position: relative;
+      display: block;
+      height: 40px;
+      width: 40px;
+      margin-bottom: 1rem;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 3px;
+      background: #fff;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        fill: $theme-primary-blue;
+      }
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.9rem;
+
+      li {
+        a {
+          color: inherit;
+
+          &:hover,
+          &:active,
+          &:focus {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__form {
+    padding: 25px;
+    color: $title-color;
+
+    @media (min-width: 768px) {
+      padding: 50px;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      color: $text-color-gray;
+      text-align: center;
+    }
+  }
+}
