@@ -33,13 +33,12 @@ $(document).ready(function () {
     submitHandler: function submitHandler(form) {
       submitBtn.prop('disabled', true).addClass('is-loading');
       $.ajax({
-        type: 'POST',
-        url: 'email.php',
+        type: form.method,
+        url: form.action,
         data: $(form).serialize(),
         success: function success() {
+          $(form).trigger('reset');
           modal.modal('show');
-          $(this).find('input').val('');
-          $(this).trigger('reset');
           submitBtn.prop('disabled', false).removeClass('is-loading');
         },
         error: function error() {
