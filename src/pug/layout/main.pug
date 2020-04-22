@@ -19,7 +19,20 @@ html(class="page" lang="ru")
 		<![endif]-->
 		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
 		link(rel="stylesheet" type='text/css' href="static/css/styles.css")
-	body(data-spy="scroll" data-target="#navbar" data-offset="50")
+	body(data-spy="scroll" data-target="#navbar" data-offset="50" class="webp")
+		script.
+			(function () {
+				var img = new Image();
+				img.onload = function () {
+					if (!(img.height > 0 && img.width > 0)) {
+						document.body.classList.remove('webp');
+					}
+				};
+				img.onerror = function () {
+					document.body.classList.remove('webp');
+				};
+				img.src = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+			})();
 		.page__inner
 			.page__content
 				block content
