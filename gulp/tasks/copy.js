@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 
-module.exports = function fonts() {
-    return gulp.src('src/files/*.*')
+module.exports = function copy() {
+    return gulp.src(['src/files/*.*','src/files/.htaccess'])
         .pipe(gulp.dest('build'))
 };
