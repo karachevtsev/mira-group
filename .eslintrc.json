@@ -10,6 +10,11 @@
     }
   ],
   "globals": {
-    "$": true
+    "$": true,
+    "window": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
   }
 }

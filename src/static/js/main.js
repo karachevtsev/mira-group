@@ -55,4 +55,18 @@ $(document).ready(function () {
       window.scrollTo(0, csp - wheelDelta)
     })
   }
+  $('a[href^="#"]').on('click', function (event) {
+    event.preventDefault()
+    const hash = $(this).attr('href').split('#')[1]
+    const aTag = $('a[name=' + `${hash}` + '],[id=' + `${hash}` + ']')
+    const menu = $('.navbar-collapse ')
+    if (aTag.length) {
+      $('html, body').animate({ scrollTop: aTag.offset().top }, 500, function () {
+        location.hash = hash
+      })
+    }
+    if (menu.hasClass('show')) {
+      menu.removeClass('show')
+    }
+  })
 })
