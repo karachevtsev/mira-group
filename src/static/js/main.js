@@ -59,7 +59,7 @@ $(document).ready(function () {
     event.preventDefault()
     const hash = $(this).attr('href').split('#')[1]
     const aTag = $('a[name=' + `${hash}` + '],[id=' + `${hash}` + ']')
-    const menu = $('.navbar-collapse ')
+    const menu = $('.navbar-collapse')
     if (aTag.length) {
       $('html, body').animate({ scrollTop: aTag.offset().top }, 500, function () {
         location.hash = hash
