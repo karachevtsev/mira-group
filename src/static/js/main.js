@@ -69,4 +69,8 @@ $(document).ready(function () {
       menu.removeClass('show')
     }
   })
+  $(window).on('load', function () {
+    $('.loader').fadeOut()
+    $('.spinner-border').delay(200).fadeOut('slow')
+  })
 })
