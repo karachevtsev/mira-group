@@ -73,5 +73,5 @@ $(document).ready(function () {
     $('.loader').fadeOut()
     $('.spinner-border').delay(200).fadeOut('slow')
   })
-  $('.js-footer-date').text(new Date().getFullYear());
+  $('.js-footer-date').text(new Date().getFullYear())
 })
