@@ -47,4 +47,12 @@ $(document).ready(function () {
       })
     }
   })
+  if (navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge/)) {
+    $('body').on('mousewheel', function (event) {
+      event.preventDefault()
+      const wheelDelta = event.wheelDelta
+      const csp = window.pageYOffset
+      window.scrollTo(0, csp - wheelDelta)
+    })
+  }
 })

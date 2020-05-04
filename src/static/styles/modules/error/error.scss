@@ -1,0 +1,26 @@
+.error {
+  .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &__box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(2,3,3,.1);
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -49,4 +49,13 @@ $(document).ready(function () {
       });
     }
   });
+
+  if (navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Edge/)) {
+    $('body').on('mousewheel', function (event) {
+      event.preventDefault();
+      var wheelDelta = event.wheelDelta;
+      var csp = window.pageYOffset;
+      window.scrollTo(0, csp - wheelDelta);
+    });
+  }
 });

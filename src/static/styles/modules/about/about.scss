@@ -3,12 +3,8 @@
   background-size: auto;
 
   .container {
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 470px;
-
-    @media (min-width: 768px) {
-      padding-top: 60px;
-    }
   }
 
   &__title {
