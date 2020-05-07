@@ -55,7 +55,7 @@ $(document).ready(function () {
       window.scrollTo(0, csp - wheelDelta)
     })
   }
-  $('a[href^="#"]').on('click', function (event) {
+  $('.js-scroll-to').on('click', function (event) {
     event.preventDefault()
     const hash = $(this).attr('href').split('#')[1]
     const aTag = $('a[name=' + `${hash}` + '],[id=' + `${hash}` + ']')
