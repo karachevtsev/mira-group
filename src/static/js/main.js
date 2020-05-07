@@ -73,5 +73,24 @@ $(document).ready(function () {
     $('.loader').fadeOut()
     $('.spinner-border').delay(200).fadeOut('slow')
   })
+  function intermediate (f, ms = 100) {
+    let t
+    return (...a) => {
+      clearTimeout(t)
+      t = setTimeout(() => {
+        f(...a)
+      }, ms)
+    }
+  }
   $('.js-footer-date').text(new Date().getFullYear())
+  const toTop = $('.js-to-top')
+  toTop.hide().on('click', function (event) {
+    event.preventDefault()
+    $('html, body').animate({ scrollTop: 0 }, 300)
+  })
+  function h () {
+    $(document).scrollTop() >= 100 ? toTop.fadeIn() : toTop.fadeOut()
+  }
+  $(window).on('scroll', intermediate(h))
+  h()
 })

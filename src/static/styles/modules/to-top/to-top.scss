@@ -1,0 +1,22 @@
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 180px;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: none;
+
+  svg {
+    fill: #1f608d;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    svg {
+      opacity: 0.8;
+    }
+  }
+}
