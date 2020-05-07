@@ -89,7 +89,7 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: 0 }, 300)
   })
   function h () {
-    $(document).scrollTop() >= 100 ? toTop.fadeIn() : toTop.fadeOut()
+    $(document).scrollTop() >= 250 ? toTop.fadeIn() : toTop.fadeOut()
   }
   $(window).on('scroll', intermediate(h))
   h()

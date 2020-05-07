@@ -3,20 +3,24 @@
   right: 20px;
   bottom: 180px;
   z-index: 5;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
+  padding: 15px;
   text-align: center;
+  background: #1aa2f8;
   display: none;
 
   svg {
-    fill: #1f608d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    fill: #fff;
   }
 
   &:hover,
   &:active,
   &:focus {
-    svg {
-      opacity: 0.8;
-    }
+    background: #636e78;
   }
 }
