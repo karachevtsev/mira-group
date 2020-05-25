@@ -37,7 +37,9 @@ section#contacts.contacts
                                     | 00-095 Warszawa
                 .col-lg-7.col-12
                     .contacts-box__form
-                        h3 Появились вопросы?
+                        h3
+                            | Появились вопросы?
+                            =" "
                             br
                             | Напишите нам!
                         p Мы обязательно Вам ответим
@@ -45,24 +47,24 @@ section#contacts.contacts
                             .row
                                 .col-lg-6.col-12
                                     .form-group
-                                        label
+                                        label(for='name')
                                             | Ваше имя
-                                        input(name='name', type='text', placeholder='' required)
+                                        input(name='name', type='text', placeholder='', required, id='name')
                                 .col-lg-6.col-12
                                     .form-group
-                                        label
+                                        label(for='email')
                                             | Ваш Email
-                                        input(name='email', type='email', placeholder='')
+                                        input(name='email', type='email', placeholder='', id='email')
                                 .col-lg-12.col-12
                                     .form-group
-                                        label
+                                        label(for='phone')
                                             | Ваш номер телефона
-                                        input(name='phone', type='text', placeholder='' required)
+                                        input(name='phone', type='text', placeholder='', required, id='phone')
                                 .col-12
                                     .form-group
-                                        label
+                                        label(for='message')
                                             | Сообщение
-                                        textarea(name='message', placeholder='' required)
+                                        textarea(name='message', placeholder='' required, id='message')
                                 .col-12
                                     .form-group.form-group--button
                                         button#submit.btn(type='submit')

@@ -23,6 +23,10 @@
 
     &.error {
       border-color: #ff0000;
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 
