@@ -46,6 +46,7 @@ section#services.services
                             li Анализе и оценке конкурентной среды
                             li Определении оптимальной цены товара или услуги
                             li Каналах дистрибуции
+                        br
                         p В зависимости от поставленных задач исследования, используются следующие методики:
                         ul
                             li Телефонный опрос
@@ -72,5 +73,20 @@ section#services.services
                             li Первичные и последующие (периодические) инструктажи по технике безопасности
                             li Оценке профессионального риска
                             li Составлению инструкций, актов, протоколов и прочей документации в области охраны труда
+
+            .services__list-item.services-item
+              a.services-item__header.collapsed(data-toggle='collapse', href='#concierge', aria-expanded='false', aria-controls='concierge' data-number="05")
+                | Консьерж-сервис
+                span.services-item__header-cross
+              #concierge.collapse
+                .services-item__body
+                  p
+                    b MIRA GROUP
+                    =" "
+                    | предоставляет услуги консьерж-сервиса:
+                  ul
+                    li Бронирование гостиниц
+                    li Юридическая консультация
+                    li Услуги переводчика
         p.services__btn
             a(href="#pricing" class="btn js-scroll-to") Узнать цены
